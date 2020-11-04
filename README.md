@@ -14,6 +14,7 @@ Stickers (Model to train):
 # Getting Virtual Webcam to Run on Linux
 ### Resources
 - [YASHA instructions](https://yasha.solutions/virtual-webcam-on-linux/)
+- [new MOK key add](https://documentation.commvault.com/commvault/v11/article?p=118661.htm)
 - [official v4l2loopback](https://github.com/umlaeute/v4l2loopback)
 
 
