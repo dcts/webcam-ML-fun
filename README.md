@@ -11,6 +11,20 @@ Stickers (Model to train):
 - [x] I could not hear that   hand to ear
 - [x] I'll be right back      out of screen
 
+# Getting Virtual Webcam to Run on Linux
+### Resources
+- [YASHA instructions](https://yasha.solutions/virtual-webcam-on-linux/)
+- [official v4l2loopback](https://github.com/umlaeute/v4l2loopback)
+
+
+```bash
+# check all webcam devices
+ls -l /dev/video*
+
+# send virtual webcam
+# exclusive caps to detect on chrome and chromium
+sudo modprobe v4l2loopback video_nr=5 card_label="VirtualCam" exclusive_caps=1
+```
 # ToDo's
 
 - [ ] eventually build an ELECTRON app that can be used as virtual webcam. Loading your own ML model trained with teachable machine. Build Stickers library that connects you then can map on your trained states. Import ML model by link. Hosted on Google Server.
