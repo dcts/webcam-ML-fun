@@ -25,7 +25,15 @@ ls -l /dev/video*
 # send virtual webcam
 # exclusive caps to detect on chrome and chromium
 sudo modprobe v4l2loopback video_nr=5 card_label="VirtualCam" exclusive_caps=1
+
+# remove virtual video
+sudo modprobe -r v4l2loopback
 ```
+
+# Teachable Machine Model
+- hosted on google via CDN here: https://teachablemachine.withgoogle.com/models/716JsmZJe/
+- inside this repo under the `teachable-machine-model` folder
+
 # ToDo's
 
 - [ ] eventually build an ELECTRON app that can be used as virtual webcam. Loading your own ML model trained with teachable machine. Build Stickers library that connects you then can map on your trained states. Import ML model by link. Hosted on Google Server.
